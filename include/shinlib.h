@@ -19,7 +19,7 @@
 int shinlib_init();
 void shinlib_cleanup();
 
-int shinlib_create_menu(const char *title, const char **options, int option_count);
+int shinlib_create_menu(const char *title, const char **options, int option_count, char *seperator);
 int shinlib_menu_display(int menu_id);
 
 void shinlib_set_text_color(int color_code);
