@@ -8,13 +8,13 @@
 // Love,
 // Brad.
 
-int shinlib_create_menu(const char *title, const char **options, int option_count) {
+int shinlib_create_menu(const char *title, const char **options, int option_count, char *seperator) {
     printf("\033[2J");
     printf("\033[H");
     printf("%s\n", title);
     
     for (int i = 0; i < option_count; i++) {
-        printf("%d. %s\n", i + 1, options[i]);
+        printf("%d%c %s\n", i + 1, seperator, options[i]);
     }
     printf("Choose an option: ");
     
